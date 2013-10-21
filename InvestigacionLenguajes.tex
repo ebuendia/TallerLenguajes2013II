@@ -100,14 +100,11 @@ En sus inicios este lenguaje tenia el nombre de Cool (Lenguaje C Orientado a Obj
 La sintaxis de este lenguaje deriva de C/C++ y utiliza el modelo de objetos de la plataforma .NET, similar al de Java, aunque incluye mejoras derivadas de otros lenguajes.
 \paragraph{ }
 Su nombre C Sharp viene inspirado de una nota musical (do sostenido) con un semitono mas alto que da a entender que es superior a  C/C++ y es considerado un lenguaje multiplataforma.
-\paragraph{ }
-Creado por Scott Wiltamuth y Anders Hejlsberg, éste último es conocido por haber diseñado Turbo Pascal y la herramienta RAD Delphi.
 
 \section{Tutorial de Instalación}
 
 
-\section{Ejemplos Basicos}
-<<<<<<< HEAD
+\section{Ejemplos Básicos}
 
 \lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
 
@@ -122,8 +119,37 @@ public class Ejemplo1{
 	}
 }
 \end{lstlisting}
-=======
->>>>>>> aab70e4fab33a4ba4e6e2e2226aaec90c8d0ae42
 
+Fig 5.2: Suma, Resta, Multiplicación y División entre dos números enteros
+\begin{lstlisting}[frame=single]
+using System;
+
+public class Ejemplo2{
+	public static void Main(string[] arg){
+		int n1;	//Variable para almacenar el primer numero
+		int n2;	//Variable para almacenar el segundo numero
+		
+		//Obtenemos el primer numero
+		Console.WriteLine("Introduzca el primer numero:");
+		Console.ReadLine(n1);
+		
+		//Obtenemos el segundo numero
+		Console.WriteLine("Introduzca el segundo numero:");		
+		Console.ReadLine(n2);
+		
+		//Muestra la suma
+		Console.WriteLine("Suma: {0}", n1 + n2);
+		
+		//Muestra la resta		
+		Console.WriteLine("Resta: {0}", n1 - n2);
+		
+		//Muestra el producto		
+		Console.WriteLine("Multiplicacion: {0}", n1 * n2);
+		
+		//Muestra la division		
+		Console.WriteLine("Division: {0}", n1 / n2);
+	}
+}
+\end{lstlisting}
 
 \end{document}
