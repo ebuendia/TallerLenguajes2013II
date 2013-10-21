@@ -27,7 +27,7 @@
 \usepackage{booktabs} % for much better looking tables
 \usepackage{array} % for better arrays (eg matrices) in maths
 %\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
-\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{xcolor} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 % These packages are all incorporated in the memoir class to one degree or another...
 
@@ -105,18 +105,20 @@ Su nombre C Sharp viene inspirado de una nota musical (do sostenido) con un semi
 
 
 \section{Ejemplos Basicos}
-Hola Mundo
 
+\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
 
- \begin{verbatim}
- 	using System;
- 
-	public class Ejemplo {
-   		public static void Main(string[] args) {
-        			Console.WriteLine("Hola mundo");
-   		 }
-	} 
+Fig 5.1: Ejemplo básico "Hello World"
+\lstset{style=sharpc}
+\begin{lstlisting}[frame=single]
+using System;
 
-\end{verbatim}
+public class Ejemplo1{
+	public static void Main(string[] arg){
+		Console.WriteLine("Hello World");
+	}
+}
+\end{lstlisting}
+
 
 \end{document}
